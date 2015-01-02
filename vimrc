@@ -23,7 +23,7 @@ set tabstop=2
 set shiftwidth=2 
 set expandtab
 set softtabstop=2
-
+set autoindent
 " everything else is required for vim-latex
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
@@ -40,3 +40,8 @@ filetype indent on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+" use latexmk for complilation with the bibtex option and output pdf
+let g:Tex_MultipleCompileFormats = 'pdf'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_CompileRule_pdf = "/usr/bin/latexmk -bibtex -pdf $*"
