@@ -17,6 +17,7 @@ set nolist
 " turn off folding
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_math=1
+let g:vim_markdown_frontmatter=1
 
 " use two spaces instead of tabs and when deleting, back up by tabs
 set tabstop=2 
