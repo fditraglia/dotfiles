@@ -42,6 +42,6 @@ filetype indent on
 let g:tex_flavor='latex'
 
 " use latexmk for complilation with the bibtex option and output pdf
-let g:Tex_MultipleCompileFormats = 'pdf'
-let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_CompileRule_pdf = "/usr/bin/latexmk -bibtex -pdf $*"
+ let g:Tex_MultipleCompileFormats = 'pdf'
+ let g:Tex_DefaultTargetFormat='pdf'
+ let g:Tex_CompileRule_pdf = "latexmk -pdflatex='pdflatex -file-line-error -synctex=1 -interaction=nonstopmode' -bibtex -pdf $*"
