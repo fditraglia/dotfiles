@@ -2,6 +2,12 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# if the necessary programs are installed, print my login screen
+if type fortune cowsay lolcat &> /dev/null
+then
+  fortune -s | cowsay -f stegosaurus | lolcat
+fi
+
 # set vim to be default editor
 export EDITOR=vim
 
