@@ -6,6 +6,7 @@
 if type fortune cowsay lolcat &> /dev/null
 then
   fortune -s | cowsay -f stegosaurus | lolcat
+  echo
 fi
 
 # set vim to be default editor
