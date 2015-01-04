@@ -5,7 +5,7 @@
 # if the necessary programs are installed, print my login screen
 if type fortune cowsay lolcat &> /dev/null
 then
-  fortune -s | cowsay -f stegosaurus | lolcat
+  fortune -s | cowthink -f stegosaurus | lolcat
   echo
 fi
 
