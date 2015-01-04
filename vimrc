@@ -4,7 +4,8 @@ filetype plugin on
 runtime macros/matchit.vim
 
 set background=dark
-colorscheme desert
+" colorscheme desert
+colorscheme moria
 syntax on
 " line numbers
 set number
