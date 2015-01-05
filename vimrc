@@ -3,6 +3,7 @@ set nocompatible
 filetype plugin on
 runtime macros/matchit.vim
 
+set guifont=Monospace\ 12
 set background=dark
 " colorscheme desert
 colorscheme moria
@@ -14,11 +15,6 @@ set wrap
 set linebreak
 set nolist
 
-" options for plasticboy/vim-markdown
-" turn off folding
-let g:vim_markdown_folding_disabled=1
-let g:vim_markdown_math=1
-let g:vim_markdown_frontmatter=1
 
 " use two spaces instead of tabs and when deleting, back up by tabs
 set tabstop=2 
@@ -42,8 +38,3 @@ filetype indent on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
-
-" use latexmk for complilation with the bibtex option and output pdf
- let g:Tex_MultipleCompileFormats = 'pdf'
- let g:Tex_DefaultTargetFormat='pdf'
- let g:Tex_CompileRule_pdf = "latexmk -pdflatex='pdflatex -file-line-error -synctex=1 -interaction=nonstopmode' -bibtex -pdf $*"
