@@ -6,12 +6,6 @@
 "
 " original version from Steve Losh's gist: https://gist.github.com/1038710
 
-" options for plasticboy/vim-markdown
-" turn off folding
-let g:vim_markdown_folding_disabled=1
-let g:vim_markdown_math=1
-let g:vim_markdown_frontmatter=1
-
 func! Foldexpr_markdown(lnum)
     if (a:lnum == 1)
         let l0 = ''

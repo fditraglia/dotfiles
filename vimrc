@@ -38,3 +38,28 @@ filetype indent on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+" Ignore font warnings
+let g:tex_IgnoredWarnings =
+  \"Underfull\n".
+  \"Overfull\n".
+  \"specifier changed to\n".
+  \"You have requested\n".
+  \"Missing number, treated as zero.\n".
+  \"There were undefined references\n"
+  \"Citation %.%# undefined"
+  \"LaTeX Font Warning:"
+let g:Tex_IgnoreLevel = 8
+
+" use latexmk for complilation with the bibtex option and output pdf
+ let g:Tex_MultipleCompileFormats = 'pdf'
+ let g:Tex_DefaultTargetFormat='pdf'
+ let g:Tex_CompileRule_pdf = "latexmk -pdflatex='pdflatex -file-line-error -synctex=1 -interaction=nonstopmode' -bibtex -pdf $*"
+
+
+" options for plasticboy/vim-markdown
+" turn off folding
+let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_math=1
+let g:vim_markdown_frontmatter=1
+
