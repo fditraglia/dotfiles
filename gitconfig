@@ -1,0 +1,10 @@
+[user]
+	name = Francis DiTraglia
+	email = fditra@sas.upenn.edu
+[color]
+	ui = true
+[core]
+	editor = vim
+	excludesfile = /home/fditraglia/.gitignore
+[credential]
+	helper = cache --timeout=3600
