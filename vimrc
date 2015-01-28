@@ -40,16 +40,16 @@ filetype indent on
 let g:tex_flavor='latex'
 
 " Ignore font warnings
-let g:tex_IgnoredWarnings =
+let g:tex_IgnoredWarnings = 
   \"Underfull\n".
   \"Overfull\n".
   \"specifier changed to\n".
   \"You have requested\n".
   \"Missing number, treated as zero.\n".
-  \"There were undefined references\n"
-  \"Citation %.%# undefined"
+  \"There were undefined references\n".
+  \"Citation %.%# undefined".
   \"LaTeX Font Warning:"
-let g:Tex_IgnoreLevel = 8
+let g:Tex_IgnoreLevel = 9
 
 " use latexmk for complilation with the bibtex option and output pdf
  let g:Tex_MultipleCompileFormats = 'pdf'
