@@ -15,6 +15,11 @@ set wrap
 set linebreak
 set nolist
 
+" mappings to traverse the buffer list
+noremap <silent> [b :bprevious<CR>
+noremap <silent> ]b :bnext<CR>
+noremap <silent> [B :bfirst<CR>
+noremap <silent> ]B :blast<CR>
 
 " use two spaces instead of tabs and when deleting, back up by tabs
 set tabstop=2 
