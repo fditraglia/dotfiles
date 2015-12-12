@@ -68,3 +68,6 @@ let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_math=1
 let g:vim_markdown_frontmatter=1
 
+" set up lilypond support
+set runtimepath+=/usr/share/lilypond/2.16.2
+set autoindent
