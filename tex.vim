@@ -7,7 +7,7 @@ let g:Tex_CompileRule_pdf = "latexmk -pdflatex='pdflatex -file-line-error -synct
 
 let g:Tex_Folding = 0
 let g:Tex_PromptedCommands = 'footnote,cite,pageref,label,g,emph'
-let g:Tex_ViewRule_pdf = 'okular'
+let g:Tex_ViewRule_pdf = 'okular --unique'
 
 let g:Tex_IgnoredWarnings =
 			\"Underfull\n".
