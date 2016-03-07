@@ -1,8 +1,10 @@
 set sw=2
 set expandtab
 set iskeyword+=:
+let g:Tex_MultipleCompileFormats = 'pdf'
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_CompileRule_pdf = "/usr/local/bin/latexmk -e '$pdflatex=q/pdflatex -interaction=nonstopmode -file-line-error -halt-on-error -synctex=1/' -pdf -bibtex $*"
+let g:Tex_CompileRule_pdf = "latexmk -pdflatex='pdflatex -file-line-error -synctex=1 -interaction=nonstopmode' -bibtex -pdf $*"
+
 let g:Tex_Folding = 0
 let g:Tex_PromptedCommands = 'footnote,cite,pageref,label,g,emph'
 let g:Tex_ViewRule_pdf = 'okular'
