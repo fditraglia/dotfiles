@@ -6,6 +6,6 @@
 	ui = true
 [core]
 	editor = vim
-	excludesfile = /home/fditraglia/.gitignore
+	excludesfile = /home/fditra/.gitignore
 [credential]
 	helper = cache --timeout=3600
