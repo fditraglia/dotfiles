@@ -19,4 +19,4 @@ let g:Tex_IgnoredWarnings =
 			\"Citation %.%# undefined\n".
 			\'LaTeX Font Warning:'"
 " This number N says that latex-suite should ignore the first N of the above.
-" let g:Tex_IgnoreLevel = 8
+let g:Tex_IgnoreLevel = 8
