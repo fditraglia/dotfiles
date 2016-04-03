@@ -3,6 +3,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on " also used by vimlatex suite
 
+" map spacebar to local leader
+map <SPACE> <leader>
+
 " vimlatex suite
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
