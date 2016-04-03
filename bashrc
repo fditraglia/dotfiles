@@ -1,10 +1,10 @@
 # -------------- MY ADDITIONS
 # if the necessary programs are installed, print my login screen
-if type fortune cowsay lolcat &> /dev/null
-then
-  fortune -s | cowthink -f stegosaurus | lolcat
-  echo
-fi
+#if type fortune cowsay lolcat &> /dev/null
+#then
+#  fortune -s | cowthink -f stegosaurus | lolcat
+#  echo
+#fi
 
 # set vim to be default editor
 export EDITOR=vim
