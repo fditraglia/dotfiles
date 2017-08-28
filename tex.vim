@@ -3,7 +3,7 @@ set expandtab
 set iskeyword+=:
 let g:Tex_MultipleCompileFormats = 'pdf'
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_CompileRule_pdf = "latexmk -pdflatex='pdflatex -file-line-error -synctex=1 -interaction=nonstopmode' -bibtex -pdf $*"
+let g:Tex_CompileRule_pdf = "latexmk -pdflatex='lualatex -file-line-error -synctex=1 -interaction=nonstopmode' -bibtex -pdf $*"
 
 let g:Tex_Folding = 0
 let g:Tex_PromptedCommands = 'footnote,cite,pageref,label,g,emph'
