@@ -3,6 +3,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on " also used by vimlatex suite
 
+" configuration for vim-pandoc and vim-rmarkdown
+let g:pandoc#modules#disabled = ["folding", "spell"]
+let g:pandoc#syntax#conceal#use = 0
+
 " map spacebar to local leader
 map <SPACE> <leader>
 
