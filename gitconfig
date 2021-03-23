@@ -6,7 +6,7 @@
 	ui = true
 [core]
 	editor = vim
-	excludesfile = /home/fditra/.gitignore
+	excludesFile = ~/.gitignore
 [credential]
 	helper = cache --timeout=3600
 [push]

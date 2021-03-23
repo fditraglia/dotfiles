@@ -25,6 +25,7 @@ colorscheme moria
 syntax on
 " line numbers
 set number
+set relativenumber
 " word wrap without linebreaks
 set wrap
 set linebreak
