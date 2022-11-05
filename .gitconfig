@@ -1,0 +1,8 @@
+[user]
+	name = Francis DiTraglia
+	email = francis.ditraglia@economics.ox.ac.uk
+[core]
+	editor = vim
+	excludesfile = /home/frank/.gitignore_global
+[push]
+	default = current
